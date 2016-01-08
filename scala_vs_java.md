@@ -38,15 +38,15 @@ Scala融合了OO和FP。函数式写法非常爽：
 
 ```
 
-Java 8 lambda蛋疼的异常处理
-
-![异常处理](images/lambda_exception.jpg)
-
-Java Lambda的限制：
+Java 8 Lambda：
 
  * lambda表达式不是一等公民，必须定义函数interface
  * 如果你改了一个参数和返回类型，就得重新定义一个
  * lambda无法实现闭包
+
+Java 8 lambda蛋疼的异常处理
+
+![异常处理](images/lambda_exception.jpg)
 
 ###### 容器操作：在数据处理方面非常高效
 
@@ -75,7 +75,7 @@ Scala的容器大多数也都是不可变的
 * 隐式转换、隐式参数
 * 宏
 * 泛型（Scala作者是Java泛型的合作设计者）
-* 操作符可作为函数名、纯OO（没有原生类型）、可省略括号 -> 特别适合DSL，可用用类似自然语言使用BigDecimal做金融计算、可做复数计算（雪球）
+* 操作符可作为函数名、纯OO（没有原生类型）、可省略括号 -> 特别适合DSL，可用用类似自然语言使用BigDecimal做金融计算（[雪球投资组合](http://www.infoq.com/cn/presentations/build-a-high-available-investment-portfolio-system)）
 
 ###### example 1：Future异步处理
 ```
@@ -144,11 +144,11 @@ class NotificationActor extends Actor {
   )
 ```
 ##### [slick](http://slick.typesafe.com/)
-* Code Generator直接根据数据库生成数据类、数据库操作的代码
+* Code Generator直接从数据库生成数据类、数据库操作的代码
 * 使用容器方式操作数据库
 * 强类型，字段的类型直接转换为Scala的对应类型
 ```
-db.persons.filter(_.firstName === "Jon").map(_.lastName).sortBy(_.id).list
+Tables.persons.filter(_.firstName === "Jon").map(_.lastName).sortBy(_.id).list
 ```
 
 ##### [Finagle](https://twitter.github.io/finagle/)
@@ -167,7 +167,6 @@ db.persons.filter(_.firstName === "Jon").map(_.lastName).sortBy(_.id).list
 * 抛弃成见，拥抱变化，你会发现Scala是一门优秀的语言。
 * Java让高手和新手写出差不多的代码，Scala则不在语言层面限制表达能力、限制生产力。
 * 即便把Scala作为更好的Java来用，也会有很大收获。
-* 
 
 #### 学习资料
 * [Scala函数式程序设计](https://www.coursera.org/course/progfun) Scala作者课程
@@ -175,3 +174,4 @@ db.persons.filter(_.firstName === "Jon").map(_.lastName).sortBy(_.id).list
 * [快速了解Scala技术栈](http://www.infoq.com/cn/articles/scala-technology)
 * [Scala课堂](http://twitter.github.io/scala_school/zh_cn/index.html)
 * [Effective Scala](http://twitter.github.io/effectivescala/index-cn.html)
+* [Scala在挖财的应用实践](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=402054624&idx=1&sn=d94ecfdce7c97c57341911819b4ea32a&scene=23&srcid=0106xfD56RGUxb8NawWKO8hB#rd)
