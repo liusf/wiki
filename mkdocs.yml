@@ -1,0 +1,8 @@
+site_name: Wiki 
+pages:
+- Home: index.md
+- 编程语言:
+  - Scala vs Java: scala_vs_java.md
+
+theme: readthedocs
+docs_dir: .
