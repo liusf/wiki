@@ -9,8 +9,6 @@
 
 #### Scala的优点
 ###### 高效表达
-![Alt 表达能力](images/scala_pattern.jpg)
-
 Java有太多样板代码，敲代码速度远远跟不上思维速度:)
 
 ![case class](images/case_class.png)
@@ -19,6 +17,12 @@ case class用于模式匹配：
 
 ![match case class](images/match_case_class.png)
 
+![Alt 表达能力](images/scala_pattern.jpg)
+
+* 写Java，容易把简单的事搞复杂了，把复杂的事搞得更复杂
+* 功能不多，类文件很多。简单的功能，往往就分拆成了若干package（data、utils、factory、interface、impl...），写出来的代码往往看不懂了，因为要看的代码太多,真正解决问题的思路和核心逻辑要从中分辨出来
+* 还特别喜欢用设计模式，面试都要问个singleton怎么实现，singleton代码到处都是，虽然很多人实现得都不正确
+* Scala写得少，不仅写得快，读代码时要看得也少，逻辑一目了然
 ###### 函数式编程
 Scala融合了OO和FP。函数式写法非常爽：
 
@@ -49,7 +53,7 @@ Java 8 lambda蛋疼的异常处理
 ![异常处理](images/lambda_exception.jpg)
 
 ###### 容器操作：在数据处理方面非常高效
-
+是更高维度的操作，代码读写都很简洁清晰
 ```
 each, filter, map, reduce, foldLeft
 ```
