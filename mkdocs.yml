@@ -3,6 +3,6 @@ pages:
 - Home: index.md
 - 编程语言:
   - Scala vs Java: scala_vs_java.md
-
+  - Java 8 Introduction: java8_intro.md
 theme: readthedocs
 docs_dir: .
