@@ -20,9 +20,29 @@ Joda-Time作者联合主导
 
 #### Lambda
 
+```
+//Old way:
+List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
+int sum = 0;
+for(Integer n : list) {
+    int x = n * n;
+    sum = sum + x;
+}
+System.out.println(sum);
+
+//New way:
+List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
+int sum = list.stream().map(x -> x*x).reduce((x,y) -> x + y).get();
+System.out.println(sum);
+```
+
 #### stream API
 
 #### Default methods
 
 #### Type Annotation
 
+#### Java 7
+* try with resources
+* fork/join
+* 

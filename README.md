@@ -1,8 +1,5 @@
-### blog
 
-[入口](index.md)
+[Scala vs Java](scala_vs_java.md)
 
-使用[mkdocs](http://www.mkdocs.org/)生成wiki网站
-```
-mkdocs build --clean
-```
+[Java 8 新特性介绍](java8_intro.md)
+
